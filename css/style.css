@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;;1,400&display=swap");
 /*Обнуление*/
 * {
   padding: 0;
@@ -19,23 +19,26 @@ a:focus, a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+aside, nav, footer, header, aside {
   display: block;
 }
 
 html, body {
   height: 100%;
-  width: 100%;
-  font-size: 100%;
+  min-width: 320px;
+}
+
+body {
   line-height: 1;
   font-size: 14px;
+  font-family: "Lato";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
 input, button, textarea {
-  font-family: inherit;
+  font-family: "Lato";
 }
 
 input::-ms-clear {
@@ -75,10 +78,40 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 .wrapper {
   overflow: hidden;
-  min-width: 100%;
+  min-height: 100%;
 }
 
 .container {
   max-width: 1130px;
   padding: 0 15px;
+}
+
+.ibg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.ibg img {
+  display: none;
+}
+
+.slick-slider {
+  position: relative;
+}
+.slick-slider .slick-list {
+  overflow: hidden;
+}
+.slick-slider .slick-track {
+  display: flex;
+  font-size: 0;
+}
+.main-screen__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  display: flex;
+  font-size: 0;
 }
