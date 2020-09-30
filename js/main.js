@@ -1,8 +1,8 @@
 $('.wrapper').addClass('loaded');
 
-$('icon-menu').click(function (event) {
+$('.icon-menu').click(function (event) {
 	$(this).toggleClass('active');
-	$('.meny__body').toggleClass('active');
+	$('.menu__body').toggleClass('active');
 	$('body').toggleClass('lock');
 });
 
