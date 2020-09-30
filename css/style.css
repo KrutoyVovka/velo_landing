@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
 /*Обнуление*/
 * {
   padding: 0;
@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 1130px;
   padding: 0 15px;
+  margin: 0px auto;
 }
 
 .ibg {
@@ -312,5 +313,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .generation {
-  padding: 117px 0 142px;
+  background-color: #f7f7f7;
+  padding: 120px 0;
+}
+@media (max-width: 900px) {
+  .generation {
+    padding: 80px 0px;
+  }
+}
+@media (max-width: 600px) {
+  .generation {
+    padding: 30px 0px;
+  }
+}
+
+.block {
+  text-align: center;
+}
+.block__icon {
+  margin: 0px 0px 30px 0px;
+}
+.block__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #353738;
+  margin: 0px 0px 18px 0px;
+}
+.block__text {
+  font-size: 18px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #848789;
 }

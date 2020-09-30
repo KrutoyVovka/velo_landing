@@ -5,7 +5,7 @@
 // <ШРИФТЫ>============================================================================================================
 
 // <Подключаем шрифты>============================================================================================================
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
 // </Подключаем шрифты>============================================================================================================
 
 // <Шрифт по умолчанию>============================================================================================================
@@ -36,6 +36,7 @@ body {
 .container {
 	max-width: 1130px; // ширина контента в footer 1100px, оставляем отступы по сторонам
 	padding: 0 15px; // убираем отступы, т.о. max-width: 1100 и края не упираются ;
+	margin: 0px auto;
 }
 // </ОСНОВНАЯ СЕТКА>============================================================================================================
 
@@ -67,30 +68,51 @@ body {
 		top: 0;
 		left: 0;
 	}
-} 
+}
 
 //================================================================
 
 .content {
-	
 }
 
 //================================================================
 
 .generation {
-	padding: 117px 0 142px;
-		// .generation__block
-		&__block {}
+	background-color: #f7f7f7;
+	padding: 120px 0;
+	// .generation__block
+	&__block {
+	}
+	@media (max-width: 900px) {
+		padding: 80px 0px;
+	}
+	@media (max-width: 600px) {
+		padding: 30px 0px;
+	}
 }
 .block {
-		// .block__icon
-		&__icon {
-			
-		}
-		// .block__title
-		&__title {}
-		// .block__text
-		&__text {}
+	text-align: center;
+	// .block__icon
+	&__icon {
+		margin: 0px 0px 30px 0px;
+	}
+	// .block__title
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 24px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #353738;
+		margin: 0px 0px 18px 0px;
+	}
+	// .block__text
+	&__text {
+		font-size: 18px;
+		line-height: 34px;
+		font-weight: 400;
+		color: #848789;
+	}
 }
 
 //================================================================
