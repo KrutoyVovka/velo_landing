@@ -6,9 +6,9 @@ $('.icon-menu').click(function (event) {
 	$('body').toggleClass('lock');
 });
 
-function ibg(){ // -- jquery --
-	$.each($('.ibg'), function(index, val) {
-		if($(this).find('img').length > 0) {
+function ibg() { // -- jquery --
+	$.each($('.ibg'), function (index, val) {
+		if ($(this).find('img').length > 0) {
 			$(this).css('background-image', 'url("' + $(this).find('img').attr('src') + '")');
 		}
 	});
@@ -26,3 +26,7 @@ function ibg() {
 }
 
 ibg(); */
+
+$(document).ready(function () {
+	$('.slider').slick();
+});
