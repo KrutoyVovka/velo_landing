@@ -524,3 +524,21 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px 0px 20px 0px;
   }
 }
+
+.shop__body {
+  display: flex;
+  font-size: 0;
+}
+.shop__column {
+  flex: 0 1 16.666%;
+}
+.shop__column_b {
+  flex: 0 1 33.333%;
+}
+.block-shop__row {
+  display: flex;
+  font-size: 0;
+}
+.block-shop__column {
+  flex: 0 1 50%;
+}
