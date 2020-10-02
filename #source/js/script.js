@@ -24,9 +24,4 @@ function ibg() {
 		}
 	}
 }
-
 ibg(); */
-
-$(document).ready(function () {
-	$('.slider').slick();
-});
