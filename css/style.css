@@ -21,7 +21,6 @@
 a:focus,
 a:active {
   outline: none;
-  cursor: pointer;
 }
 
 aside,
